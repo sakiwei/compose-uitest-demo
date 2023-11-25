@@ -4,7 +4,6 @@ package com.sakiwei.compose_test.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
@@ -35,7 +34,6 @@ fun LandingScreen(landingViewModel: LandingViewModel = viewModel()) {
     LandingScreenContent(state, landingViewModel::countIncrement)
 }
 
-@ExperimentalMaterial3Api
 @Composable
 fun LandingScreenContent(
     uiState: LandingUiState = LandingUiState.Initial,
